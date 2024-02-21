@@ -86,12 +86,7 @@ PROPOSE TIMELINE FOR PLAN
 PROPOSE ESTIMATED SPENDING PLAN
 
 ---
-## Project management overview (3): Dates of key deliverables 
-
-PROPOSE DATES FOR KEY DELIVERABLES (GANTT CHART)
-
----
-## Project management overview (4): Stakeholder engagement opportunities
+## Project management overview (3): Stakeholder engagement opportunities
 
 PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
 
