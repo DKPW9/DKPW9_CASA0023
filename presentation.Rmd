@@ -1,0 +1,67 @@
+---
+title: "Bogotá's Septima Verde"
+author: "Ana Steiner, Aida Kazlauskatiė, Ciara Clarke, Marta Woroneicka and Hannah Schuller"
+institute: "UCL"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: solarized-dark
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: align-left
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+```
+
+## Rapid urbanisation in Bogotá, Colombia
+
+CLEAR DEFINITION OF THE PROBLEM FACED BY THE CITY
+
+---
+## Improving compliance with development agendas
+
+PROVIDE DESCRIPTION OF HOW IMPROVING BOGOTÁ'S ISSUES WOULD IMPROVE COMPLIANCE WITH DEVELOPMENT AGENDAS
+
+---
+## Benefits of change
+
+SHOW THE BENEFITS THAT IMPROVING THE ISSUE WOULD BRING TO THE CITY + POPULATION
+
+---
+## Proposed workflow
+
+OFFER A LOGICAL workflow that incorporates EO data (at least one dataset required)
+
+---
+## Incorporating workflow into Bogotá's 'business as usual'
+
+DISCUSS HOW DATA + WORKFLOW CAN BE INCORPORATED INTO THE CITY'S 'BUSINESS AS USUAL' DATA PIPELINES/WORKFLOWS
+
+---
+## Project management overview (1): Timeline
+
+PROPOSE TIMELINE FOR PLAN
+
+---
+## Project management overview (2): Estimated spending plan
+
+PROPOSE ESTIMATED SPENDING PLAN
+
+---
+## Project management overview (3): Dates of key deliverables 
+
+PROPOSE DATES FOR KEY DELIVERABLES (GANTT CHART)
+
+---
+## Project management overview (4): Stakeholder engagement opportunities
+
+PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
+
+---
+## End slide
+
+---
+## References 
