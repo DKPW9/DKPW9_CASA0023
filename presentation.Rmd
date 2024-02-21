@@ -43,11 +43,11 @@ This project proposes a 'green corridor' along one of the largest and busiest av
 knitr::include_graphics("slide2.png")
 ```
 
-
 ---
-## Benefits of change
-
-SHOW THE BENEFITS THAT IMPROVING THE ISSUE WOULD BRING TO THE CITY + POPULATION
+## Project benefits
+```{r echo=FALSE, out.width = "90%", fig.align='center', cache=FALSE}
+knitr::include_graphics("slide3.png")
+```
 
 ---
 ## Who we are + our role
