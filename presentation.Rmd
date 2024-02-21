@@ -15,10 +15,15 @@ class: align-left
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ```
+## Bogotá: the problems
+```{r echo=FALSE, out.width = "80%", fig.align='center', cache=FALSE}
+knitr::include_graphics("slide1graphic.png")
+```
 
-## Rapid urbanisation in Bogotá, Colombia
 
-CLEAR DEFINITION OF THE PROBLEM FACED BY THE CITY
+
+
+
 
 ---
 ## Improving compliance with development agendas
