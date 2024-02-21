@@ -44,15 +44,26 @@ knitr::include_graphics("slide2.png")
 ```
 
 ---
-## Project benefits
+## Project benefits and international compliance
 ```{r echo=FALSE, out.width = "90%", fig.align='center', cache=FALSE}
 knitr::include_graphics("slide3.png")
 ```
 
 ---
-## Who we are + our role
-
+## Our role
+.pull-left[
 EXPLAIN HOW GIVEN THE PROBLEM AND THE PROJECT WE COME INTO THINGS - EMPHASIS ON THE FACT THAT WE'RE MONITORING FOR THE SAKE OF COMPLIANCE
+
+Specifically, our role will see monitoring two things to ensure project compliance:
+
+a) Traffic congestion
+
+b) Air quality
+]
+```{r echo=FALSE, out.width = "30%", fig.align='right', cache=FALSE}
+knitr::include_graphics("slide4.png")
+```
+
 
 ---
 ## Proposed workflow
