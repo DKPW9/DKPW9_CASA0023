@@ -117,7 +117,7 @@ PROPOSE ESTIMATED SPENDING PLAN
 ---
 ## Budget
 
-![Budget](Screenshot 2024-03-14 124110.png)
+![Detailed budget](Screenshot 2024-03-14 124110.png)
 ---
 ## Limitations and mitigation of risk
 
