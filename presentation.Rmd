@@ -28,9 +28,11 @@ use_panelset()
 7. Data inputs
 8. Integration to Bogota's pipeline
 9. Stakeholder engagement
-10. GANTT graph and team details
-11. Limitations and mitigation of risk
-12. Future continuation
+10. Team roles and purposes
+11. GANTT graph
+12. Budget 
+13. Limitations and mitigation of risk
+14. Future continuation
 
 ---
 ## Bogota: the context 
@@ -152,14 +154,35 @@ knitr::kable(head(sociodemographic), format = 'html')
 ]
 
 ---
+
 ## Integration to Bogota's pipeline
 
 ---
+
 ## Stakeholder engagement
 
 ---
-## GANTT and team details
 
+## Team roles and purpuses
+
+| Team                    | Role/Purpose                                                                                                            |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Project coordinator     | Oversee all project activities, ensuring milestones are met and align with the project's objectives and stakeholder expectations. |
+| Admin                   | Provide logistical, administrative, and operational support to ensure smooth project execution.                         |
+| Remote sensing specialist | Expertise in acquiring and processing high-resolution optical imagery, NDVI, thermal infrared imagery, and air quality sensor data. Skilled in the use of software for satellite image classification, such as SVM (Support Vector Machines). |
+| GIS analyst             | Proficient in GIS software to integrate various data layers, perform spatial analysis, and produce maps and visualizations. Experience with land cover classification and regression analysis to assess relationships between land cover changes and temperature (LST data). |
+| Transportation engineer | Skilled in transport modeling and simulation, ideally with experience using SUMO (Simulation of Urban Mobility) or similar tools. Able to import and adjust road network data from sources like OpenStreetMap and calibrate models to reflect real-world conditions. |
+| Data scientist          | Capable of managing and analyzing large datasets, including journey origin-destination matrices and traffic flow data. Competent in statistical modeling, machine learning, and data visualization. |
+| Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
+
+---
+## GANNT GRAPH
+
+
+---
+## Budget
+
+![Detailed budget](Screenshot 2024-03-14 124110.png)
 ---
 ## Limitations and mitigation of risk
 
