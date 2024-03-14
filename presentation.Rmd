@@ -81,10 +81,18 @@ knitr::include_graphics('compliance.png')
 ## Case study
 
 ---
-## Workflow: simulation
+```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('workflowtraffic.png')
+```
+
 
 ---
-## Workflow: site selection
+```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('workflowsite.png')
+```
+
 
 ---
 ## Data inputs
