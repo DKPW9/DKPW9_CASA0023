@@ -26,9 +26,10 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 7. Data inputs
 8. Integration to Bogota's pipeline
 9. Stakeholder engagement
-10. GANTT graph and team details
-11. Limitations and mitigation of risk
-12. Future continuation
+10. GANTT graph
+11. Budget and team details
+12. Limitations and mitigation of risk
+13. Future continuation
 
 ---
 ## Bogota: the context 
@@ -63,15 +64,44 @@ PROPOSE TIMELINE FOR PLAN
 PROPOSE ESTIMATED SPENDING PLAN
 
 ---
+
 ## Integration to Bogota's pipeline
 
-PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
+.pull-left[
+### Data integration: baseline and recollection for simulator
+
+- Environmental Monitoring Systems: Align temperature data with SINA standards and implement automated APIs.
+- Traffic Data Integration: Work with SIMUR to integrate real-time traffic data.
+
+### During the creation of the simulator and its respective capacity building
+
+- Urban Planning Software Compatibility: Ensure simulator outputs are compatible with Bogotá's POT.
+- Training and Capacity Building: Develop training for city staff on integrating simulator data.
+]
+
+.pull-right[
+### Collaborative decision making for choosing the site
+
+- Integration into Strategic Planning Sessions: Include simulator insights in planning sessions.
+- Policy Impact Assessments: Use simulator data for impact assessments of urban projects.
+
+### External communication and public engagement
+
+- Digital Engagement Platforms: Use "Bogotá Abierta" to share findings and gather feedback.
+- Community Workshops and Forums: Organize workshops with JACs in high-impact neighborhoods.
+]
 
 ---
+
 ## Stakeholder engagement
 
 ---
-## GANTT and team details
+## GANTT graph
+
+---
+
+## Buget and team details
+
 
 ---
 ## Limitations and mitigation of risk
