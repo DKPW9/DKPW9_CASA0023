@@ -100,7 +100,60 @@ PROPOSE ESTIMATED SPENDING PLAN
 PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
 
 ---
-# Stakeholder engagement
+# Stakeholder engagement 1
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('gov-agencies.png')
+```
+<small>
+- District Planning Secretariat (Secretaría Distrital de Planeación)
+- Environmental Secretariat (Secretaría Distrital de Ambiente)
+- Mobility Secretariat (Secretaría de Movilidad)
+- Department of Public Works (IDU - Instituto de Desarrollo Urbano)
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('communities.png')
+```
+- Local Community Action Boards (Juntas de Acción Comunal)
+- Bogotá Como Vamos
+- Fundación Al Verde Vivo
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('universities.png')
+```
+- Universidad de los Andes
+- Universidad Nacional de Colombia
+- Javeriana University
+</small>
+---
+#Stakeholder engagement 2
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('companies.png')
+```
+- Bogotá Chamber of Commerce (Cámara de Comercio de Bogotá):
+- Fenalco Bogotá
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('unions.png')
+```
+- Transportation Unions
+- Residents of Affected Neighborhoods
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('organisations.png')
+```
+- Environmental Activist Groups
+- World Bank Urban Development Sector
+- C40 Cities Climate Leadership Group
 
 ---
 # GANTT and team details
