@@ -1,6 +1,6 @@
 ---
 title: "Green Corridor in Bogotá"
-author: "Ana Steiner, Aida Kazlauskatiė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
+author: "Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
 institute: "UCL"
 date: "`r Sys.Date()`"
 output:
@@ -20,7 +20,22 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ---
 ## Bogota: the context 
 
+.pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
+
+```{r echo=FALSE, out.width= "100%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('bogota.png')
+```
+]
+
+.pull-right[
+```{r echo=FALSE, out.width= "65%", fig.show='hold', fig.align= 'center'}
+
+knitr::include_graphics('bogota-context.png')
+```
+]
 ---
+
 ## Past interventions
 ```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
 knitr::include_graphics("map.png")
