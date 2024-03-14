@@ -8,6 +8,8 @@
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -108,6 +110,113 @@ class: align-left
 
 ---
 ## Data inputs
+.panelset[
+.panel[.panel-name[Traffic]
+
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Open Street Maps Road Network data (OSMnx) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Traffic simulation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High resolution (1:1250) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regularly updated, current: 2024 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Movilidata Bogotá Bitcarrier traffic data &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Traffic simulation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High; varies based on specific dataset but precise point data available &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Quarterly update, current: Autumn 2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free (but requires requesting via government data portal) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.panel[.panel-name[Land surface temperature]
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Sentinel-2 (ESA) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Land surface temperature modelling &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Yes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10-20m &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10 day revisit &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Landsat-8 Thermal Infrared Sensor (USGS) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Land surface temperature modelling &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Yes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 100m (resampled 30m version also available via USGS) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 16 day revisit &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.panel[.panel-name[Socio-demographic]
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Bogotá city development plans &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Potential construction zoning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High resolution (1:1000) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regularly updated, current: 2024 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free (but requires requesting via government data portal) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; National Adminsitrative Department of Statistics: Population census data &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Site selection planning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Census tracts &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + available &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+]
 
 ---
 ## Integration to Bogota's pipeline
