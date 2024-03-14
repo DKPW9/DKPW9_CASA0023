@@ -17,6 +17,19 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ```
 ## Table of contents
 
+1. Bogota: the context
+2. Past interventions
+3. International and national compliance
+4. Case study
+5. Workflow: Simulation
+6. Workflow: Site selection
+7. Data inputs
+8. Integration to Bogota's pipeline
+9. Stakeholder engagement
+10. GANTT graph and team details
+11. Limitations and mitigation of risk
+12. Future continuation
+
 ---
 ## Bogota: the context 
 
