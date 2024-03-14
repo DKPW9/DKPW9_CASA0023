@@ -26,10 +26,11 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 7. Data inputs
 8. Integration to Bogota's pipeline
 9. Stakeholder engagement
-10. GANTT graph
-11. Budget and team details
-12. Limitations and mitigation of risk
-13. Future continuation
+10. Team roles and purposes
+11. GANTT graph
+12. Budget 
+13. Limitations and mitigation of risk
+14. Future continuation
 
 ---
 ## Bogota: the context 
@@ -96,13 +97,8 @@ PROPOSE ESTIMATED SPENDING PLAN
 ## Stakeholder engagement
 
 ---
-## GANTT graph
-
----
 
 ## Team roles and purpuses
-
-## Team Roles and Purposes
 
 | Team                    | Role/Purpose                                                                                                            |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -114,6 +110,14 @@ PROPOSE ESTIMATED SPENDING PLAN
 | Data scientist          | Capable of managing and analyzing large datasets, including journey origin-destination matrices and traffic flow data. Competent in statistical modeling, machine learning, and data visualization. |
 | Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
 
+---
+## GANNT GRAPH
+
+
+---
+## Budget
+
+![Budget](Screenshot 2024-03-14 124110.png)
 ---
 ## Limitations and mitigation of risk
 
