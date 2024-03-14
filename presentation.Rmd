@@ -22,6 +22,9 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 
 ---
 ## Past interventions
+```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
+knitr::include_graphics("map.png")
+```
 
 ---
 ## International and national compliance
