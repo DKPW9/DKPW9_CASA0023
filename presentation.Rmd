@@ -27,6 +27,22 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ## International and national compliance
 
 ---
+## Proposal
+
+#### Main Objective:
+- Develop a simulator using land surface temperature data and traffic data to identify optimal locations for a green corridor in Bogota.
+- Account for how this will affect city-wide traffic flow and heat patterns before implementation.
+
+#### Secondary Objectives:
+- Transform key streets and corridors to prioritize greenery, public spaces, and pedestrian access. 
+- Improve air quality by decreasing traffic congestion.
+
+#### Outputs:
+- A comprehensive simulator tool for planning green corridors.
+- Capacity building programs for stakeholders to leverage the simulator in urban planning.
+- A detailed proposal for the green corridor's location and design based on simulator outcomes.
+
+---
 ## Case study
 
 OFFER A LOGICAL workflow that incorporates EO data (at least one dataset required)
