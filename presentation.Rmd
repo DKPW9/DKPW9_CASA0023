@@ -99,16 +99,14 @@ knitr::include_graphics('compliance.png')
 ---
 ```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
 
-knitr::include_graphics('workflowtraffic.png')
+knitr::include_graphics('simulator_workflow.png')
 ```
-
 
 ---
-```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
-knitr::include_graphics('workflowsite.png')
+knitr::include_graphics('project_workflow.png')
 ```
-
 
 ---
 ## Data inputs
