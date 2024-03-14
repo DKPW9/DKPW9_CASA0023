@@ -40,13 +40,11 @@ knitr::include_graphics('bogota-context.png')
 ```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
 knitr::include_graphics("map.png")
 ```
-.pull-left[
-(i) Medellin’s implemented Corredor Verde 
+.pull-left[ (i) Medellin’s implemented Corredor Verde 
 - Missed opportunities for continuous monitoring using remote sensing data
 - Failed to fully utilise traffic congestion data
 - Limited socio-demographic analysis
 - Overlooked the urban heat island effect
-
 
 (ii) Bogotá’s Septima Verde: a rejected proposal
 - Rejected due to skepticism of sustainability claims 
@@ -61,27 +59,17 @@ knitr::include_graphics("map.png")
 ---
 ## Case study
 
-OFFER A LOGICAL workflow that incorporates EO data (at least one dataset required)
-
 ---
 ## Workflow: simulation
-
-DISCUSS HOW DATA + WORKFLOW CAN BE INCORPORATED INTO THE CITY'S 'BUSINESS AS USUAL' DATA PIPELINES/WORKFLOWS
 
 ---
 ## Workflow: site selection
 
-PROPOSE TIMELINE FOR PLAN
-
 ---
 ## Data inputs
 
-PROPOSE ESTIMATED SPENDING PLAN
-
 ---
 ## Integration to Bogota's pipeline
-
-PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
 
 ---
 ## Stakeholder engagement
