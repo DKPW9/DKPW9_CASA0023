@@ -59,6 +59,11 @@ knitr::include_graphics("map.png")
 ---
 ## International and national compliance
 
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('compliance.png')
+```
+
 ---
 ## Case study
 
