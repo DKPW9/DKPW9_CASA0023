@@ -59,25 +59,21 @@ knitr::include_graphics("map.png")
 # International and national compliance
 
 ---
-class: my-one-page-font
-.my-one-page-font {
-  font-size: 40px;
-}
-
 # Case study
 
 ### Cooling Singapore 2.0 – Digital Urban Climate Twin (DUCT)
 
 .pull-left[
+<small>
 - Aims to simulate scenarios in regions experiencing elevated temperatures, which may involve the incorporation of additional parks and open spaces.
-- Recently, a beta version of DUCT was released for testing by urban planners and policy makers.
+- A beta version of DUCT was released for testing by urban planners and policy makers.
 - Integrates all pertinent computational models to consider environmental variables such as wind and sunlight, land cover, traffic, industrial and building energy models, and human mobility + allows for the simulation of various scenarios.
-- *"When developed, the digital tool will help us make more informed decisions when implementing different mitigation strategies to improve outdoor thermal comfort at the nationwide level.”* (URA, 2023)
 - Target is to achieve Technology Readiness Level 6+ by August 2024.
-Sources: World Bank, 2023; Ang, 2024; URA, 2023; Aydt, 2023.]
+
+Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.</small>]
 
 .pull-right[
-```{r echo=FALSE, out.width= "100%", fig.show='hold', fig.align= 'center'}
+```{r echo=FALSE, out.width= "95%", fig.show='hold', fig.align= 'center'}
 
 knitr::include_graphics('singapore.png')
 ```
