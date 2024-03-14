@@ -1,6 +1,6 @@
 ---
-title: "Bogotá's Septima Verde"
-author: "Ana Steiner, Aida Kazlauskatiė, Ciara Clarke, Marta Woroneicka and Hannah Schuller"
+title: "Green Corridor in Bogotá"
+author: "Ana Steiner, Aida Kazlauskatiė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
 institute: "UCL"
 date: "`r Sys.Date()`"
 output:
