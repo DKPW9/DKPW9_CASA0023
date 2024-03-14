@@ -25,6 +25,20 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
 knitr::include_graphics("map.png")
 ```
+.pull-left[
+(i) Medellin’s implemented Corredor Verde 
+- Missed opportunities for continuous monitoring using remote sensing data
+- Failed to fully utilise traffic congestion data
+- Limited socio-demographic analysis
+- Overlooked the urban heat island effect
+
+
+(ii) Bogotá’s Septima Verde: a rejected proposal
+- Rejected due to skepticism of sustainability claims 
+- Lack of EO data demonstrating environmental benefits
+- No predictive modelling to anticipate traffic impacts
+- Insufficient stakeholder engagement
+]
 
 ---
 ## International and national compliance
