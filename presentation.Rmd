@@ -78,5 +78,13 @@ PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
 
 ---
 ## Future continuation
+- Retain use of the mapping tool for future green space implementations or road traffic adjustments
+- Trained team of geo data analysts for tool implementation and future development
+- Future iterations could predict other factors such as air quality by incorporating more data on building and vegetation height, meteorological data on wind speed and direction, and air quality recordings.
+
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'center', fig.cap= "Bogota Air Quality (Source: Breezometer, 2024)"}
+
+knitr::include_graphics('airqualitymap.png')
+```
 
 ---
