@@ -1,6 +1,6 @@
 ---
 title: "Green Corridor in Bogotá"
-author: "Ana Steiner, Aida Kazlauskatiė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
+author: "Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
 institute: "UCL"
 date: "`r Sys.Date()`"
 output:
@@ -14,6 +14,8 @@ output:
 class: align-left
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+library(xaringanExtra)
+use_panelset()
 ```
 ## Table of contents
 
@@ -35,63 +37,152 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 ---
 ## Bogota: the context 
 
+.pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
+
+```{r echo=FALSE, out.width= "100%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('bogota.png')
+```
+]
+
+.pull-right[
+```{r echo=FALSE, out.width= "65%", fig.show='hold', fig.align= 'center'}
+
+knitr::include_graphics('context.png')
+```
+]
 ---
+
 ## Past interventions
-```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
+.pull-left[
+```{r  echo=FALSE, out.width='90%', fig.align='left', cache=FALSE}
 knitr::include_graphics("map.png")
 ```
+]
+
+.pull-right[ 
+##### (i) Medellin’s implemented Corredor Verde 
+- Missed opportunities for continuous monitoring using remote sensing data
+- Failed to fully utilise traffic congestion data
+- Limited socio-demographic analysis
+- Overlooked the urban heat island effect
+
+##### (ii) Bogotá’s rejected Septima Verde
+- Rejected due to skepticism of sustainability claims 
+- Lack of EO data demonstrating environmental benefits
+- No predictive modelling to anticipate traffic impacts
+]
 
 ---
 ## International and national compliance
 
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('compliance.png')
+```
+
+---
+## Proposal
+
+#### Main Objective:
+- Develop a simulator using land surface temperature data and traffic data to identify optimal locations for a green corridor in Bogota.
+- Account for how this will affect city-wide traffic flow and heat patterns before implementation.
+
+#### Secondary Objectives:
+- Transform key streets and corridors to prioritize greenery, public spaces, and pedestrian access. 
+- Improve air quality by decreasing traffic congestion.
+
+#### Outputs:
+- A comprehensive simulator tool for planning green corridors.
+- Capacity building programs for stakeholders to leverage the simulator in urban planning.
+- A detailed proposal for the green corridor's location and design based on simulator outcomes.
+
 ---
 ## Case study
 
-OFFER A LOGICAL workflow that incorporates EO data (at least one dataset required)
+---
+```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('simulator_workflow.png')
+```
 
 ---
-## Workflow: simulation
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
-DISCUSS HOW DATA + WORKFLOW CAN BE INCORPORATED INTO THE CITY'S 'BUSINESS AS USUAL' DATA PIPELINES/WORKFLOWS
-
----
-## Workflow: site selection
-
-PROPOSE TIMELINE FOR PLAN
+knitr::include_graphics('project_workflow.png')
+```
 
 ---
 ## Data inputs
+.panelset[
+.panel[.panel-name[Traffic]
 
-PROPOSE ESTIMATED SPENDING PLAN
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+traffic <- read_excel('traffic.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(traffic), format = 'html')
+```
+]
+
+.panel[.panel-name[Land surface temperature]
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+LST <- read_excel('LST.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(LST), format = 'html')
+```
+]
+
+.panel[.panel-name[Socio-demographic]
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+sociodemographic <- read_excel('sociodemographic.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(sociodemographic), format = 'html')
+```
+]
+]
 
 ---
 
 ## Integration to Bogota's pipeline
 
-.pull-left[
+.pull-left[ 
+
 ### Data integration: baseline and recollection for simulator
 
-- Environmental Monitoring Systems: Align temperature data with SINA standards and implement automated APIs.
-- Traffic Data Integration: Work with SIMUR to integrate real-time traffic data.
+- **Environmental Monitoring Systems:** Align temperature data with SINA standards and implement automated APIs.
+- **Traffic Data Integration:** Work with SIMUR to integrate real-time traffic data.
 
 ### During the creation of the simulator and its respective capacity building
 
-- Urban Planning Software Compatibility: Ensure simulator outputs are compatible with Bogotá's POT.
-- Training and Capacity Building: Develop training for city staff on integrating simulator data.
+- **Urban Planning Software Compatibility:** Ensure simulator outputs are compatible with Bogotá's POT.
+- **Training and Capacity Building:** Develop training for city staff on integrating simulator data.
+
 ]
 
-.pull-right[
+.pull-right[ 
+
 ### Collaborative decision making for choosing the site
 
-- Integration into Strategic Planning Sessions: Include simulator insights in planning sessions.
-- Policy Impact Assessments: Use simulator data for impact assessments of urban projects.
+- **Integration into Strategic Planning Sessions:** Include simulator insights in planning sessions.
+- **Policy Impact Assessments:** Use simulator data for impact assessments of urban projects.
 
 ### External communication and public engagement
 
-- Digital Engagement Platforms: Use "Bogotá Abierta" to share findings and gather feedback.
-- Community Workshops and Forums: Organize workshops with JACs in high-impact neighborhoods.
+- **Digital Engagement Platforms:** Use "Bogotá Abierta" to share findings and gather feedback.
+- **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
 ]
-
 ---
 
 ## Stakeholder engagement
@@ -125,5 +216,14 @@ PROPOSE ESTIMATED SPENDING PLAN
 
 ---
 ## Future continuation
+- Retain use of the mapping tool for future green space implementations or road traffic adjustments
+- Trained team of geo data analysts for tool implementation and future development
+- Future iterations could predict other factors such as air quality by incorporating more data on building and vegetation height, meteorological data on wind speed and direction, and air quality recordings.
+
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'center', fig.cap= "Bogota Air Quality (Source: Breezometer, 2024)"}
+
+knitr::include_graphics('airqualitymap.png')
+```
 
 ---
+## References
