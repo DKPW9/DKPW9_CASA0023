@@ -30,7 +30,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x36e83c2dc6740e7a2b9fdaa21507376","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b6380a70f9e84350b573a88c8e853342","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
     <script src="libs/editable/editable.js"></script>
@@ -59,29 +59,26 @@ background-position: center
 ### &lt;br/&gt;Ana Steiner, Aida Kazlauskaitė,&lt;br/&gt; Ciara Clarke, Marta Woroniecka and Hannah Schuller&lt;br/&gt;  15/03/2024
 
 ---
-
-class: align-left
-
-# Table of contents
 ## Table of contents
 
 1. Bogota: the context
 2. Past interventions
-3. International and national compliance
-4. Case study
-5. Workflow: Simulation
-6. Workflow: Site selection
-7. Data inputs
-8. Integration to Bogota's pipeline
-9. Stakeholder engagement
-10. Team roles and purposes
-11. GANTT graph
-12. Budget 
-13. Limitations and mitigation of risk
-14. Future continuation
+3. Our proposal
+4. International and national compliance
+5. Case study
+6. Workflow: Simulation
+7. Workflow: Site selection
+8. Data inputs
+9. Integration to Bogota's pipeline
+10. Stakeholder engagement
+11. Team roles and purposes
+12. GANTT graph
+13. Budget 
+14. Limitations and mitigation of risk
+15. Future continuation
 
 ---
-# Bogota: the context 
+## Bogota: the context 
 
 .pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
 
@@ -92,15 +89,9 @@ class: align-left
 &lt;img src="context.png" width="65%" style="display: block; margin: auto;" /&gt;
 ]
 ---
-
-# Past interventions
-&lt;img src="map.png" width="45%" style="display: block; margin: auto auto auto 0;" /&gt;
-.pull-left[
-(i) Medellin’s implemented Corredor Verde 
-
 ## Past interventions
 .pull-left[
-&lt;img src="map.png" width="90%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="widerColombia.png" width="90%" style="display: block; margin: auto auto auto 0;" /&gt;
 ]
 
 .pull-right[ 
@@ -110,45 +101,13 @@ class: align-left
 - Limited socio-demographic analysis
 - Overlooked the urban heat island effect
 
-
-(ii) Bogotá’s Septima Verde: a rejected proposal
-- Rejected due to skepticism of sustainability claims 
-- Lack of EO data demonstrating environmental benefits
-- No predictive modelling to anticipate traffic impacts
-- Insufficient stakeholder engagement
 ##### (ii) Bogotá’s rejected Septima Verde
 - Rejected due to skepticism of sustainability claims 
 - Lack of EO data demonstrating environmental benefits
 - No predictive modelling to anticipate traffic impacts
-
 ]
 
 ---
-# International and national compliance
-
-&lt;img src="compliance.png" width="90%" /&gt;
-
----
-# Case study
-
-### Cooling Singapore 2.0 – Digital Urban Climate Twin (DUCT)
-
-.pull-left[
-&lt;small&gt;
-- Aims to simulate scenarios in regions experiencing elevated temperatures, which may involve the incorporation of additional parks and open spaces.
-- A beta version of DUCT was released for testing by urban planners and policy makers.
-- Integrates all pertinent computational models to consider environmental variables such as wind and sunlight, land cover, traffic, industrial and building energy models, and human mobility + allows for the simulation of various scenarios.
-- Target is to achieve Technology Readiness Level 6+ by August 2024.
-
-Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
-
-.pull-right[
-&lt;img src="singapore.png" width="95%" style="display: block; margin: auto;" /&gt;
-]
-
----
-# Workflow: simulation
-
 ## Proposal
 
 #### Main Objective:
@@ -165,18 +124,36 @@ Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
 - A detailed proposal for the green corridor's location and design based on simulator outcomes.
 
 ---
-# Workflow: site selection
+## International and national compliance
+
+&lt;img src="compliance.png" width="70%" /&gt;
+
+---
 ## Case study
 
----
-&lt;img src="simulator_workflow.png" width="180%" /&gt;
+### Cooling Singapore 2.0 – Digital Urban Climate Twin (DUCT)
+
+.pull-left[
+&lt;small&gt;
+- Aims to simulate scenarios in regions experiencing elevated temperatures, which may involve the incorporation of additional parks and open spaces.
+- A beta version of DUCT was released for testing by urban planners and policy makers.
+- Integrates all pertinent computational models to consider environmental variables such as wind and sunlight, land cover, traffic, industrial and building energy models, and human mobility + allows for the simulation of various scenarios.
+- Target is to achieve Technology Readiness Level 6+ by August 2024.
+
+Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
+
+.pull-right[
+&lt;img src="singapore.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
 
 ---
-&lt;img src="project_workflow.png" width="90%" /&gt;
+
+&lt;img src="simulator_workflow.png" width="90%" /&gt;
 
 ---
-# Data inputs
+&lt;img src="project_workflow.png" width="70%" /&gt;
 
+---
 ## Data inputs
 .panelset[
 .panel[.panel-name[Traffic]
@@ -216,7 +193,6 @@ Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
 ]
 
 .panel[.panel-name[Land surface temperature]
-
 
 
 &lt;table&gt;
@@ -288,19 +264,16 @@ Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
 ]
 
 ---
-# Integration to Bogota's pipeline
-
 ## Integration to Bogota's pipeline
-
 
 .pull-left[ 
 
-### Data integration: baseline and recollection for simulator
+#### Data integration: baseline and recollection for simulator
 
 - **Environmental Monitoring Systems:** Align temperature data with SINA standards and implement automated APIs.
 - **Traffic Data Integration:** Work with SIMUR to integrate real-time traffic data.
 
-### During the creation of the simulator and its respective capacity building
+#### During the creation of the simulator and its respective capacity building
 
 - **Urban Planning Software Compatibility:** Ensure simulator outputs are compatible with Bogotá's POT.
 - **Training and Capacity Building:** Develop training for city staff on integrating simulator data.
@@ -309,65 +282,65 @@ Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
 
 .pull-right[ 
 
-### Collaborative decision making for choosing the site
+#### Collaborative decision making for choosing the site
 
 - **Integration into Strategic Planning Sessions:** Include simulator insights in planning sessions.
 - **Policy Impact Assessments:** Use simulator data for impact assessments of urban projects.
 
-### External communication and public engagement
+#### External communication and public engagement
 
 - **Digital Engagement Platforms:** Use "Bogotá Abierta" to share findings and gather feedback.
 - **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
 ]
+
 ---
-# Stakeholder engagement 1
+## Stakeholder engagement
+.panelset[
+.panel[.panel-name[Government agencies]
 &lt;img src="gov-agencies.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
-&lt;small&gt;
 - District Planning Secretariat (Secretaría Distrital de Planeación)
 - Environmental Secretariat (Secretaría Distrital de Ambiente)
 - Mobility Secretariat (Secretaría de Movilidad)
 - Department of Public Works (IDU - Instituto de Desarrollo Urbano)
+]
 
-
+.panel[.panel-name[Community organisations]
 &lt;img src="communities.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
 - Local Community Action Boards (Juntas de Acción Comunal)
 - Bogotá Como Vamos
 - Fundación Al Verde Vivo
+]
 
-
+.panel[.panel-name[Academia]
 &lt;img src="universities.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
 - Universidad de los Andes
 - Universidad Nacional de Colombia
 - Javeriana University
-&lt;/small&gt;
----
-#Stakeholder engagement 2
+]
+
+.panel[.panel-name[Commerce]
 &lt;img src="companies.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
 - Bogotá Chamber of Commerce (Cámara de Comercio de Bogotá):
 - Fenalco Bogotá
+]
 
-
+.panel[.panel-name[Unions]
 &lt;img src="unions.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
 - Transportation Unions
 - Residents of Affected Neighborhoods
+]
 
-
+.panel[.panel-name[Other]
 &lt;img src="organisations.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
 - Environmental Activist Groups
 - World Bank Urban Development Sector
 - C40 Cities Climate Leadership Group
-
----
-# GANTT and team details
-
----
-# Limitations and mitigation of risk
-
-## Stakeholder engagement
+]
+]
 
 ---
 
-## Team roles and purpuses
+## Team roles and purposes
 
 | Team                    | Role/Purpose                                                                                                            |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -380,25 +353,21 @@ Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
 | Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
 
 ---
-## GANNT GRAPH
+## GANNT chart
 
-![Detailed budget](Screenshot 2024-03-14 212157.png){:height="50%" width="50%"}
+![Detailed budget](Screenshot 2024-03-14 212157.png){:height="30%" width="50%"}
 
 ---
 ## Budget
 
-![Detailed budget](Screenshot 2024-03-14 212430.png){:height="40%" width="50%"}
+![Detailed budget](Screenshot 2024-03-14 212430.png){:height="20%" width="50%"}
 
 ---
-## Limitations and mitigation of risk
-
+# Limitations and mitigation of risk
 
 &lt;img src="limitations.png" width="90%" /&gt;
 
-
 ---
-# Future continuation
-
 ## Future continuation
 - Retain use of the mapping tool for future green space implementations or road traffic adjustments
 - Trained team of geo data analysts for tool implementation and future development
