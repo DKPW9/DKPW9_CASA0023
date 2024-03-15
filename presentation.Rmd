@@ -1,21 +1,93 @@
 ---
 title: "Green Corridor in Bogotá"
+subtitle: "CASA0023<br/>Group Project"
 author: "Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller"
 institute: "UCL"
-date: "`r Sys.Date()`"
+date: "2024"
 output:
   xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom_fonts.css"]
     lib_dir: libs
     nature:
-      highlightStyle: solarized-dark
+      highlightStyle: github
       highlightLines: true
+      ratio: 16:10
       countIncrementalSlides: false
+    seal: false
 ---
-class: align-left
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+```{r setup, include=FALSE,echo=FALSE}
+options(htmltools.dir.version = FALSE)
+library(dplyr)
+library(readr)
+library(readxl)
+library(knitr)
 ```
 # Table of contents
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(primary_color = "#0D5E74", 
+                 # secondary_color = "#2881C6",
+  header_font_google = google_font("Helvetica"),
+  text_font_google   = google_font("Helvetica", "300", "300i"),
+  code_font_google   = google_font("Helvetica"),
+)
+```
+
+```{r xaringan-all, echo=FALSE, warning=FALSE}
+library(countdown)
+library(xaringan)
+library(xaringanExtra)
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+xaringanExtra::use_broadcast()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_slide_tone()
+xaringanExtra::use_search(show_icon = TRUE, auto_search	=FALSE)
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         
+  mute_unhighlighted_code = TRUE  
+)
+```
+
+class: center, title-slide, middle
+
+background-image: url("bogotathings1.jpeg")
+background-size: cover
+background-position: center
+
+# Green Corridor in Bogotá
+## CASA0023 Remotely Sensing Cities and Environments
+### <br/>Ana Steiner, Aida Kazlauskaitė,<br/> Ciara Clarke, Marta Woroniecka and Hannah Schuller<br/>  `r format(Sys.time(), "%d/%m/%Y")`
+
+---
+
+## Table of contents
+
+1. Bogota: the context
+2. Past interventions
+3. International and national compliance
+4. Case study
+5. Workflow: Simulation
+6. Workflow: Site selection
+7. Data inputs
+8. Integration to Bogota's pipeline
+9. Stakeholder engagement
+10. Team roles and purposes
+11. GANTT graph
+12. Budget 
+13. Limitations and mitigation of risk
+14. Future continuation
 
 ---
 # Bogota: the context 
@@ -31,32 +103,41 @@ knitr::include_graphics('bogota.png')
 .pull-right[
 ```{r echo=FALSE, out.width= "65%", fig.show='hold', fig.align= 'center'}
 
-knitr::include_graphics('bogota-context.png')
+knitr::include_graphics('context.png')
 ```
 ]
 ---
 
+
 # Past interventions
 ```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
+## Past interventions
+.pull-left[
+```{r  echo=FALSE, out.width='90%', fig.align='left', cache=FALSE}
 knitr::include_graphics("map.png")
 ```
-.pull-left[
-(i) Medellin’s implemented Corredor Verde 
+]
+
+.pull-right[ 
+##### (i) Medellin’s implemented Corredor Verde 
 - Missed opportunities for continuous monitoring using remote sensing data
 - Failed to fully utilise traffic congestion data
 - Limited socio-demographic analysis
 - Overlooked the urban heat island effect
 
-
-(ii) Bogotá’s Septima Verde: a rejected proposal
+##### (ii) Bogotá’s rejected Septima Verde
 - Rejected due to skepticism of sustainability claims 
 - Lack of EO data demonstrating environmental benefits
 - No predictive modelling to anticipate traffic impacts
-- Insufficient stakeholder engagement
 ]
 
 ---
 # International and national compliance
+
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('compliance.png')
+```
 
 ---
 # Case study
@@ -81,24 +162,111 @@ knitr::include_graphics('singapore.png')
 
 ---
 # Workflow: simulation
+## Proposal
 
-DISCUSS HOW DATA + WORKFLOW CAN BE INCORPORATED INTO THE CITY'S 'BUSINESS AS USUAL' DATA PIPELINES/WORKFLOWS
+#### Main Objective:
+- Develop a simulator using land surface temperature data and traffic data to identify optimal locations for a green corridor in Bogota.
+- Account for how this will affect city-wide traffic flow and heat patterns before implementation.
+
+#### Secondary Objectives:
+- Transform key streets and corridors to prioritize greenery, public spaces, and pedestrian access. 
+- Improve air quality by decreasing traffic congestion.
+
+#### Outputs:
+- A comprehensive simulator tool for planning green corridors.
+- Capacity building programs for stakeholders to leverage the simulator in urban planning.
+- A detailed proposal for the green corridor's location and design based on simulator outcomes.
+
+---
+## Case study
+
+---
+```{r echo=FALSE, out.width= "180%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('simulator_workflow.png')
+```
 
 ---
 # Workflow: site selection
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
-PROPOSE TIMELINE FOR PLAN
+knitr::include_graphics('project_workflow.png')
+```
 
 ---
 # Data inputs
+## Data inputs
+.panelset[
+.panel[.panel-name[Traffic]
 
-PROPOSE ESTIMATED SPENDING PLAN
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+traffic <- read_excel('traffic.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(traffic), format = 'html')
+```
+]
+
+.panel[.panel-name[Land surface temperature]
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+LST <- read_excel('LST.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(LST), format = 'html')
+```
+]
+
+.panel[.panel-name[Socio-demographic]
+```{r, echo=FALSE, message= FALSE, warning=FALSE}
+library(readxl)
+sociodemographic <- read_excel('sociodemographic.xlsx')
+library(tidyverse) 
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(sociodemographic), format = 'html')
+```
+]
+]
 
 ---
 # Integration to Bogota's pipeline
 
-PROPOSE OPPORTUNITIES FOR STAKEHOLDER ENGAGEMENT W/ PROJECT
 
+## Integration to Bogota's pipeline
+
+.pull-left[ 
+
+### Data integration: baseline and recollection for simulator
+
+- **Environmental Monitoring Systems:** Align temperature data with SINA standards and implement automated APIs.
+- **Traffic Data Integration:** Work with SIMUR to integrate real-time traffic data.
+
+### During the creation of the simulator and its respective capacity building
+
+- **Urban Planning Software Compatibility:** Ensure simulator outputs are compatible with Bogotá's POT.
+- **Training and Capacity Building:** Develop training for city staff on integrating simulator data.
+
+]
+
+.pull-right[ 
+
+### Collaborative decision making for choosing the site
+
+- **Integration into Strategic Planning Sessions:** Include simulator insights in planning sessions.
+- **Policy Impact Assessments:** Use simulator data for impact assessments of urban projects.
+
+### External communication and public engagement
+
+- **Digital Engagement Platforms:** Use "Bogotá Abierta" to share findings and gather feedback.
+- **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
+]
 ---
 # Stakeholder engagement 1
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
@@ -158,10 +326,54 @@ knitr::include_graphics('organisations.png')
 ---
 # GANTT and team details
 
+
+## Stakeholder engagement
+
+---
+
+## Team roles and purpuses
+
+| Team                    | Role/Purpose                                                                                                            |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Project coordinator     | Oversee all project activities, ensuring milestones are met and align with the project's objectives. |
+| Admin                   | Provide logistical, administrative, and operational support.                         |
+| Remote sensing specialist | Expertise in acquiring and processing high-resolution optical imagery, NDVI, thermal infrared imagery, and air quality sensor data.  |
+| GIS analyst             | Proficient in GIS software to integrate various data layers, perform spatial analysis, and produce maps and visualizations.  |
+| Transportation engineer | Skilled in transport modeling and simulation, ideally with experience using SUMO (Simulation of Urban Mobility) or similar tools.  |
+| Data scientist          | Capable of managing and analyzing large datasets, including journey origin-destination matrices and traffic flow data.  |
+| Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
+
+---
+## GANNT GRAPH
+
+![Detailed budget](Screenshot 2024-03-14 212157.png){:height="50%" width="50%"}
+
+---
+## Budget
+
+![Detailed budget](Screenshot 2024-03-14 212430.png){:height="40%" width="50%"}
+
 ---
 # Limitations and mitigation of risk
+
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('limitations.png')
+```
+
 
 ---
 # Future continuation
 
+## Future continuation
+- Retain use of the mapping tool for future green space implementations or road traffic adjustments
+- Trained team of geo data analysts for tool implementation and future development
+- Future iterations could predict other factors such as air quality by incorporating more data on building and vegetation height, meteorological data on wind speed and direction, and air quality recordings.
+
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'center', fig.cap= "Bogota Air Quality (Source: Breezometer, 2024)"}
+
+knitr::include_graphics('airqualitymap.png')
+```
+
 ---
+## References
