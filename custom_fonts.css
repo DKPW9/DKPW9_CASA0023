@@ -1,0 +1,43 @@
+/* General styling for body text */
+.remark-slide-content {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* General styling for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', serif;
+}
+
+/* Make the title slide's text 'dirty white' */
+.title-slide .remark-slide-content,
+.title-slide h1, 
+.title-slide h2, 
+.title-slide h3 {
+    font-weight: bold;
+    color: #F8F8F8; /* Dirty white */
+}
+
+.title-slide h1 {
+    font-size: 70px;
+    margin-top: 5px;
+}
+
+.title-slide h2 {
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+.title-slide h3 {
+    font-size: 20px;
+    margin-top: 300px;
+}
+
+/* Adjust font color for headings on all slides except the title slide */
+.remark-slide-container:not(:first-of-type) h1,
+.remark-slide-container:not(:first-of-type) h2,
+.remark-slide-container:not(:first-of-type) h3,
+.remark-slide-container:not(:first-of-type) h4,
+.remark-slide-container:not(:first-of-type) h5,
+.remark-slide-container:not(:first-of-type) h6 {
+    color: #555555; /* Darker grey for other slides */
+}

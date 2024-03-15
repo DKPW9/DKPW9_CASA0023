@@ -6,31 +6,59 @@
     <meta name="author" content="Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller" />
     <meta name="date" content="2024-03-14" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b5a085002cde41379f72d505f4704457","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom_fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-.title[
+
+
+
+
+
+
+class: center, title-slide, middle
+
+background-image: url("bogotathings1.jpeg")
+background-size: cover
+background-position: center
+
 # Green Corridor in Bogotá
-]
-.author[
-### Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller
-]
-.institute[
-### UCL
-]
-.date[
-### 2024-03-14
-]
+## CASA0023 Remotely Sensing Cities and Environments
+### &lt;br/&gt;Ana Steiner, Aida Kazlauskaitė,&lt;br/&gt; Ciara Clarke, Marta Woroniecka and Hannah Schuller&lt;br/&gt;  14/03/2024
 
 ---
-
-class: align-left
 
 ## Table of contents
 
@@ -224,6 +252,32 @@ class: align-left
 
 ## Integration to Bogota's pipeline
 
+.pull-left[ 
+
+### Data integration: baseline and recollection for simulator
+
+- **Environmental Monitoring Systems:** Align temperature data with SINA standards and implement automated APIs.
+- **Traffic Data Integration:** Work with SIMUR to integrate real-time traffic data.
+
+### During the creation of the simulator and its respective capacity building
+
+- **Urban Planning Software Compatibility:** Ensure simulator outputs are compatible with Bogotá's POT.
+- **Training and Capacity Building:** Develop training for city staff on integrating simulator data.
+
+]
+
+.pull-right[ 
+
+### Collaborative decision making for choosing the site
+
+- **Integration into Strategic Planning Sessions:** Include simulator insights in planning sessions.
+- **Policy Impact Assessments:** Use simulator data for impact assessments of urban projects.
+
+### External communication and public engagement
+
+- **Digital Engagement Platforms:** Use "Bogotá Abierta" to share findings and gather feedback.
+- **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
+]
 ---
 
 ## Stakeholder engagement
@@ -246,12 +300,16 @@ class: align-left
 ## GANNT GRAPH
 
 
+![Detailed budget](Screenshot 2024-03-14 124110.png)
 ---
 ## Budget
 
 ![Detailed budget](Screenshot 2024-03-14 124110.png)
 ---
 ## Limitations and mitigation of risk
+
+&lt;img src="limitations.png" width="90%" /&gt;
+
 
 ---
 ## Future continuation
@@ -270,8 +328,9 @@ class: align-left
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "solarized-dark",
+"highlightStyle": "github",
 "highlightLines": true,
+"ratio": "16:10",
 "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
