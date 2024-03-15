@@ -22,6 +22,7 @@ library(readr)
 library(readxl)
 library(knitr)
 ```
+# Table of contents
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
@@ -89,7 +90,7 @@ background-position: center
 14. Future continuation
 
 ---
-## Bogota: the context 
+# Bogota: the context 
 
 .pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
 
@@ -107,6 +108,9 @@ knitr::include_graphics('context.png')
 ]
 ---
 
+
+# Past interventions
+```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
 ## Past interventions
 .pull-left[
 ```{r  echo=FALSE, out.width='90%', fig.align='left', cache=FALSE}
@@ -128,7 +132,7 @@ knitr::include_graphics("map.png")
 ]
 
 ---
-## International and national compliance
+# International and national compliance
 
 ```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
@@ -136,6 +140,28 @@ knitr::include_graphics('compliance.png')
 ```
 
 ---
+# Case study
+
+### Cooling Singapore 2.0 – Digital Urban Climate Twin (DUCT)
+
+.pull-left[
+<small>
+- Aims to simulate scenarios in regions experiencing elevated temperatures, which may involve the incorporation of additional parks and open spaces.
+- A beta version of DUCT was released for testing by urban planners and policy makers.
+- Integrates all pertinent computational models to consider environmental variables such as wind and sunlight, land cover, traffic, industrial and building energy models, and human mobility + allows for the simulation of various scenarios.
+- Target is to achieve Technology Readiness Level 6+ by August 2024.
+
+Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.</small>]
+
+.pull-right[
+```{r echo=FALSE, out.width= "95%", fig.show='hold', fig.align= 'center'}
+
+knitr::include_graphics('singapore.png')
+```
+]
+
+---
+# Workflow: simulation
 ## Proposal
 
 #### Main Objective:
@@ -161,12 +187,14 @@ knitr::include_graphics('simulator_workflow.png')
 ```
 
 ---
+# Workflow: site selection
 ```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
 knitr::include_graphics('project_workflow.png')
 ```
 
 ---
+# Data inputs
 ## Data inputs
 .panelset[
 .panel[.panel-name[Traffic]
@@ -208,6 +236,8 @@ knitr::kable(head(sociodemographic), format = 'html')
 ]
 
 ---
+# Integration to Bogota's pipeline
+
 
 ## Integration to Bogota's pipeline
 
@@ -238,6 +268,64 @@ knitr::kable(head(sociodemographic), format = 'html')
 - **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
 ]
 ---
+# Stakeholder engagement 1
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('gov-agencies.png')
+```
+<small>
+- District Planning Secretariat (Secretaría Distrital de Planeación)
+- Environmental Secretariat (Secretaría Distrital de Ambiente)
+- Mobility Secretariat (Secretaría de Movilidad)
+- Department of Public Works (IDU - Instituto de Desarrollo Urbano)
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('communities.png')
+```
+- Local Community Action Boards (Juntas de Acción Comunal)
+- Bogotá Como Vamos
+- Fundación Al Verde Vivo
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('universities.png')
+```
+- Universidad de los Andes
+- Universidad Nacional de Colombia
+- Javeriana University
+</small>
+---
+#Stakeholder engagement 2
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('companies.png')
+```
+- Bogotá Chamber of Commerce (Cámara de Comercio de Bogotá):
+- Fenalco Bogotá
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('unions.png')
+```
+- Transportation Unions
+- Residents of Affected Neighborhoods
+
+
+```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
+
+knitr::include_graphics('organisations.png')
+```
+- Environmental Activist Groups
+- World Bank Urban Development Sector
+- C40 Cities Climate Leadership Group
+
+---
+# GANTT and team details
+
 
 ## Stakeholder engagement
 
@@ -266,7 +354,7 @@ knitr::kable(head(sociodemographic), format = 'html')
 ![Detailed budget](Screenshot 2024-03-14 212430.png){:height="40%" width="50%"}
 
 ---
-## Limitations and mitigation of risk
+# Limitations and mitigation of risk
 
 ```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
@@ -275,6 +363,8 @@ knitr::include_graphics('limitations.png')
 
 
 ---
+# Future continuation
+
 ## Future continuation
 - Retain use of the mapping tool for future green space implementations or road traffic adjustments
 - Trained team of geo data analysts for tool implementation and future development
