@@ -101,7 +101,7 @@ knitr::include_graphics('bogota.png')
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width= "65%", fig.show='hold', fig.align= 'center'}
+```{r echo=FALSE, out.width= "53%", fig.show='hold', fig.align= 'center'}
 
 knitr::include_graphics('context.png')
 ```
@@ -110,7 +110,7 @@ knitr::include_graphics('context.png')
 
 
 # Past interventions
-```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}
+```{r  echo=FALSE, out.width='45%', fig.align='left', cache=FALSE}```
 ## Past interventions
 .pull-left[
 ```{r  echo=FALSE, out.width='90%', fig.align='left', cache=FALSE}
@@ -154,12 +154,11 @@ knitr::include_graphics('compliance.png')
 Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.</small>]
 
 .pull-right[
-```{r echo=FALSE, out.width= "95%", fig.show='hold', fig.align= 'center'}
+```{r echo=FALSE, out.width= "60%", fig.show='hold', fig.align= 'center'}
 
 knitr::include_graphics('singapore.png')
 ```
 ]
-
 ---
 # Workflow: simulation
 ## Proposal
@@ -268,18 +267,20 @@ knitr::kable(head(sociodemographic), format = 'html')
 - **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
 ]
 ---
-# Stakeholder engagement 1
+# Stakeholder engagement
+.panelset[
+.panel[.panel-name[Government agencies]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('gov-agencies.png')
 ```
-<small>
 - District Planning Secretariat (Secretaría Distrital de Planeación)
 - Environmental Secretariat (Secretaría Distrital de Ambiente)
 - Mobility Secretariat (Secretaría de Movilidad)
 - Department of Public Works (IDU - Instituto de Desarrollo Urbano)
+]
 
-
+.panel[.panel-name[Community organisations]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('communities.png')
@@ -287,8 +288,9 @@ knitr::include_graphics('communities.png')
 - Local Community Action Boards (Juntas de Acción Comunal)
 - Bogotá Como Vamos
 - Fundación Al Verde Vivo
+]
 
-
+.panel[.panel-name[Academia]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('universities.png')
@@ -296,25 +298,27 @@ knitr::include_graphics('universities.png')
 - Universidad de los Andes
 - Universidad Nacional de Colombia
 - Javeriana University
-</small>
----
-#Stakeholder engagement 2
+]
+
+.panel[.panel-name[Commerce]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('companies.png')
 ```
 - Bogotá Chamber of Commerce (Cámara de Comercio de Bogotá):
 - Fenalco Bogotá
+]
 
-
+.panel[.panel-name[Unions]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('unions.png')
 ```
 - Transportation Unions
 - Residents of Affected Neighborhoods
+]
 
-
+.panel[.panel-name[Other]
 ```{r echo=FALSE, out.width= "10%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('organisations.png')
@@ -322,12 +326,12 @@ knitr::include_graphics('organisations.png')
 - Environmental Activist Groups
 - World Bank Urban Development Sector
 - C40 Cities Climate Leadership Group
-
+]
+]
 ---
 # GANTT and team details
 
 
-## Stakeholder engagement
 
 ---
 
