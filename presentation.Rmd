@@ -335,12 +335,18 @@ knitr::include_graphics('organisations.png')
 ---
 ## GANNT chart
 
-![Detailed budget](Screenshot 2024-03-14 212157.png){:height="30%" width="50%"}
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('Screenshot 2024-03-14 212157.png')
+```
 
 ---
 ## Budget
 
-![Detailed budget](Screenshot 2024-03-14 212430.png){:height="20%" width="50%"}
+```{r echo=FALSE, out.width= "40%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('Screenshot 2024-03-14 212430.png')
+```
 
 ---
 # Limitations and mitigation of risk

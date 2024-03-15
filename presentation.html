@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Green Corridor in Bogotá</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ana Steiner, Aida Kazlauskaitė, Ciara Clarke, Marta Woroniecka and Hannah Schuller" />
+    <meta name="date" content="2024-01-01" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"e983e54e87574a22adb6420999f24cfb","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom_fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+class: center, title-slide, middle
+
+background-image: url("bogotathings1.jpeg")
+background-size: cover
+background-position: center
+
+# Green Corridor in Bogotá
+## CASA0023 Remotely Sensing Cities and Environments
+### &lt;br/&gt;Ana Steiner, Aida Kazlauskaitė,&lt;br/&gt; Ciara Clarke, Marta Woroniecka and Hannah Schuller&lt;br/&gt;  15/03/2024
+
+---
+## Table of contents
+
+1. Bogota: the context
+2. Past interventions
+3. Our proposal
+4. International and national compliance
+5. Case study
+6. Workflow: Simulation
+7. Workflow: Site selection
+8. Data inputs
+9. Integration to Bogota's pipeline
+10. Stakeholder engagement
+11. Team roles and purposes
+12. GANTT graph
+13. Budget 
+14. Limitations and mitigation of risk
+15. Future continuation
+
+---
+## Bogota: the context 
+
+.pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
+
+&lt;img src="bogota.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+&lt;img src="context.png" width="65%" style="display: block; margin: auto;" /&gt;
+]
+---
+## Past interventions
+.pull-left[
+&lt;img src="widerColombia.png" width="90%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[ 
+##### (i) Medellin’s implemented Corredor Verde 
+- Missed opportunities for continuous monitoring using remote sensing data
+- Failed to fully utilise traffic congestion data
+- Limited socio-demographic analysis
+- Overlooked the urban heat island effect
+
+##### (ii) Bogotá’s rejected Septima Verde
+- Rejected due to skepticism of sustainability claims 
+- Lack of EO data demonstrating environmental benefits
+- No predictive modelling to anticipate traffic impacts
+]
+
+---
+## Proposal
+
+#### Main Objective:
+- Develop a simulator using land surface temperature data and traffic data to identify optimal locations for a green corridor in Bogota.
+- Account for how this will affect city-wide traffic flow and heat patterns before implementation.
+
+#### Secondary Objectives:
+- Transform key streets and corridors to prioritize greenery, public spaces, and pedestrian access. 
+- Improve air quality by decreasing traffic congestion.
+
+#### Outputs:
+- A comprehensive simulator tool for planning green corridors.
+- Capacity building programs for stakeholders to leverage the simulator in urban planning.
+- A detailed proposal for the green corridor's location and design based on simulator outcomes.
+
+---
+## International and national compliance
+
+&lt;img src="compliance.png" width="70%" /&gt;
+
+---
+## Case study
+
+### Cooling Singapore 2.0 – Digital Urban Climate Twin (DUCT)
+
+.pull-left[
+&lt;small&gt;
+- Aims to simulate scenarios in regions experiencing elevated temperatures, which may involve the incorporation of additional parks and open spaces.
+- A beta version of DUCT was released for testing by urban planners and policy makers.
+- Integrates all pertinent computational models to consider environmental variables such as wind and sunlight, land cover, traffic, industrial and building energy models, and human mobility + allows for the simulation of various scenarios.
+- Target is to achieve Technology Readiness Level 6+ by August 2024.
+
+Sources: World Bank, 2023; Ang, 2024; Aydt, 2023.&lt;/small&gt;]
+
+.pull-right[
+&lt;img src="singapore.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+&lt;img src="simulator_workflow.png" width="90%" /&gt;
+
+---
+&lt;img src="project_workflow.png" width="70%" /&gt;
+
+---
+## Data inputs
+.panelset[
+.panel[.panel-name[Traffic]
+
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Open Street Maps Road Network data (OSMnx) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Traffic simulation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High resolution (1:1250) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regularly updated, current: 2024 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Movilidata Bogotá Bitcarrier traffic data &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Traffic simulation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High; varies based on specific dataset but precise point data available &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Quarterly update, current: Autumn 2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free (but requires requesting via government data portal) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.panel[.panel-name[Land surface temperature]
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Sentinel-2 (ESA) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Land surface temperature modelling &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Yes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10-20m &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10 day revisit &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Landsat-8 Thermal Infrared Sensor (USGS) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Land surface temperature modelling &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Yes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 100m (resampled 30m version also available via USGS) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 16 day revisit &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + accessible &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.panel[.panel-name[Socio-demographic]
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Data source &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Specific use &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; EO data? &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Spatial resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Temporal resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Cost &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Bogotá city development plans &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Potential construction zoning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; High resolution (1:1000) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regularly updated, current: 2024 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free (but requires requesting via government data portal) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; National Adminsitrative Department of Statistics: Population census data &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Site selection planning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; No &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Census tracts &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Free + available &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+]
+
+---
+## Integration to Bogota's pipeline
+
+.pull-left[ 
+
+#### Data integration: baseline and recollection for simulator
+
+- **Environmental Monitoring Systems:** Align temperature data with SINA standards and implement automated APIs.
+- **Traffic Data Integration:** Work with SIMUR to integrate real-time traffic data.
+
+#### During the creation of the simulator and its respective capacity building
+
+- **Urban Planning Software Compatibility:** Ensure simulator outputs are compatible with Bogotá's POT.
+- **Training and Capacity Building:** Develop training for city staff on integrating simulator data.
+
+]
+
+.pull-right[ 
+
+#### Collaborative decision making for choosing the site
+
+- **Integration into Strategic Planning Sessions:** Include simulator insights in planning sessions.
+- **Policy Impact Assessments:** Use simulator data for impact assessments of urban projects.
+
+#### External communication and public engagement
+
+- **Digital Engagement Platforms:** Use "Bogotá Abierta" to share findings and gather feedback.
+- **Community Workshops and Forums:** Organize workshops with JACs in high-impact neighborhoods.
+]
+
+---
+## Stakeholder engagement
+.panelset[
+.panel[.panel-name[Government agencies]
+&lt;img src="gov-agencies.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- District Planning Secretariat (Secretaría Distrital de Planeación)
+- Environmental Secretariat (Secretaría Distrital de Ambiente)
+- Mobility Secretariat (Secretaría de Movilidad)
+- Department of Public Works (IDU - Instituto de Desarrollo Urbano)
+]
+
+.panel[.panel-name[Community organisations]
+&lt;img src="communities.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- Local Community Action Boards (Juntas de Acción Comunal)
+- Bogotá Como Vamos
+- Fundación Al Verde Vivo
+]
+
+.panel[.panel-name[Academia]
+&lt;img src="universities.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- Universidad de los Andes
+- Universidad Nacional de Colombia
+- Javeriana University
+]
+
+.panel[.panel-name[Commerce]
+&lt;img src="companies.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- Bogotá Chamber of Commerce (Cámara de Comercio de Bogotá):
+- Fenalco Bogotá
+]
+
+.panel[.panel-name[Unions]
+&lt;img src="unions.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- Transportation Unions
+- Residents of Affected Neighborhoods
+]
+
+.panel[.panel-name[Other]
+&lt;img src="organisations.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
+- Environmental Activist Groups
+- World Bank Urban Development Sector
+- C40 Cities Climate Leadership Group
+]
+]
+
+---
+
+## Team roles and purposes
+
+| Team                    | Role/Purpose                                                                                                            |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Project coordinator     | Oversee all project activities, ensuring milestones are met and align with the project's objectives. |
+| Admin                   | Provide logistical, administrative, and operational support.                         |
+| Remote sensing specialist | Expertise in acquiring and processing high-resolution optical imagery, NDVI, thermal infrared imagery, and air quality sensor data.  |
+| GIS analyst             | Proficient in GIS software to integrate various data layers, perform spatial analysis, and produce maps and visualizations.  |
+| Transportation engineer | Skilled in transport modeling and simulation, ideally with experience using SUMO (Simulation of Urban Mobility) or similar tools.  |
+| Data scientist          | Capable of managing and analyzing large datasets, including journey origin-destination matrices and traffic flow data.  |
+| Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
+
+---
+## GANNT chart
+
+&lt;img src="Screenshot 2024-03-14 212157.png" width="50%" /&gt;
+
+---
+## Budget
+
+&lt;img src="Screenshot 2024-03-14 212430.png" width="40%" /&gt;
+
+---
+# Limitations and mitigation of risk
+
+&lt;img src="limitations.png" width="90%" /&gt;
+
+---
+## Future continuation
+- Retain use of the mapping tool for future green space implementations or road traffic adjustments
+- Trained team of geo data analysts for tool implementation and future development
+- Future iterations could predict other factors such as air quality by incorporating more data on building and vegetation height, meteorological data on wind speed and direction, and air quality recordings.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="airqualitymap.png" alt="Bogota Air Quality (Source: Breezometer, 2024)" width="50%" /&gt;
+&lt;p class="caption"&gt;Bogota Air Quality (Source: Breezometer, 2024)&lt;/p&gt;
+&lt;/div&gt;
+
+---
+## References
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:10",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
