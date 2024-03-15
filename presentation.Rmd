@@ -349,7 +349,7 @@ knitr::include_graphics('Screenshot 2024-03-14 212430.png')
 ```
 
 ---
-# Limitations and mitigation of risk
+## Limitations and mitigation of risk
 
 ```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
