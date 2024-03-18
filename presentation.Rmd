@@ -384,4 +384,43 @@ knitr::include_graphics('airqualitymap.png')
 ```
 
 ---
-## References
+## References (i)
+Ang, J. (2024) Solving Singapore’s Urban Heat Island effect, Singapore Management University. Available at: https://research.smu.edu.sg/news/2024/feb/01/solving-singapore%E2%80%99s-urban-heat-island-effect#:~:text=About%20Digital%20Urban%20Climate%20Twin&text=The%20DUCT%20incorporates%20all%20relevant,as%20the%20movements%20of%20people (Accessed: 14 March 2024). 
+ 
+Aydt, H (2023) ‘A Digital Urban Climate Twin of Singapore to Analyse Green Plan 2030 Scenarios’. Available at: https://www.mnd.gov.sg/docs/default-source/mnd-documents/uss-r-d-congress-2023-speaker-presentations/05-dr-heiko-aydt_a-digital-urban-climate-twin-of-singapore.pdf (Accessed: 14 March 2024). 
+ 
+
+Breezometer (2024) Check the Air Quality in Bogota, Colombia. Available at: https://www.breezometer.com/air-quality-map/air-quality/colombia/bogota,-d.c. (Accessed: 14 March 2024) 
+ 
+
+Gonzalez, P.A., Weinstein, J.S., Barbeau, S.J., Labrador, M.A., Winters, P.L., Georggi, N.L. and Perez, R., 2010. Automating mode detection for travel behaviour analysis by using global positioning systems-enabled mobile phones and neural networks. IET Intelligent Transport Systems, 4(1), pp.37-49. 
+
+ 
+Hui, P. S. (2023) Cool solutions for a hotter climate: Tackling urban heat island effect with innovation, World Bank Blogs. Available at: https://blogs.worldbank.org/sustainablecities/cool-solutions-hotter-climate-tackling-urban-heat-island-effect-innovation (Accessed: 14 March 2024). 
+ 
+---
+## References (ii)
+Imaginanet (2015) Bogota Traffic Management Interface. Available at: https://www.imaginanet.com/portfolio-en/bogota-en.html (Accessed: 14 March 2024). 
+
+Onishi, A., Cao, X., Ito, T., Shi, F. and Imura, H., 2010. Evaluating the potential for urban heat-island mitigation by greening parking lots. Urban forestry & Urban greening, 9(4), pp.323-332. 
+
+Prieto, A. (2022) Críticas al ‘corredor verde’ de la Carrera Séptima: denuncian que golpearía la movilidad, RCN Radio. RCN Radio. Available at: https://www.rcnradio.com/bogota/criticas-al-corredor-verde-de-la-carrera-septima-denuncian-que-golpearia-la-movilidad (Accessed: 14 March 2024). 
+ 
+Rajah, I. (2023) 'Speech at the launch of Urban Lab Exhibition on ‘Shaping a Heat Resilient City’', 17 November. Available at: https://www.ura.gov.sg/uol/Corporate/Media-Room/Speeches/speech_Urban_Lab_Exb-Shaping_Heat_Resilient%20-City17Nov (Accessed: 14 March 2024). 
+ 
+Reynoso, L. (2023) El corredor verde de la Séptima, proyecto insignia de Claudia López, naufraga en un juzgado, El País América Colombia. Available at: https://elpais.com/america-colombia/2023-10-26/el-corredor-verde-de-la-septima-proyecto-insignia-de-claudia-lopez-naufraga-en-un-juzgado.html# (Accessed: 14 March 2024). 
+
+---
+## References (iii)
+
+Schweizer, J., Poliziani, C., Rupi, F., Morgano, D. and Magi, M. (2021) Building a large-scale micro-simulation transport scenario using big data. ISPRS International Journal of Geo-Information, 10(3), p.165. 
+ 
+UN-Habitat (2003) Global Report on Human Settlements 2003, The Challenge of Slums, Earthscan, London; Part IV: 'Summary of City Case Studies', 'Bogota, Colombia', pp195-228. 
+
+Vargas, C. C. (2023) Personería advierte que proyecto del Corredor Verde por la carrera 7ma está incompleto, Caracol Radio. Available at: https://caracol.com.co/2023/07/08/personeria-advierte-que-proyecto-del-corredor-verde-por-la-carrera-7ma-esta-incompleto/ (Accessed: 14 March 2024). 
+
+Worldsensing (2015) BitCarrier - Traffic Flow Monitoring System By Worldsensing. Available at: https://www.environmental-expert.com/products/bitcarrier-traffic-flow-monitoring-system-719113 (Accessed: 14 March 2024). 
+ 
+Zapata, G. O. (2019) Concejales critican improvisación en corredor verde de la Oriental, www.elcolombiano.com. ElColombiano.com. Available at: https://www.elcolombiano.com/antioquia/obras/concejo-de-medellin-lanza-duras-criticas-sobre-corredor-verde-de-la-oriental-JP11698212 (Accessed: 14 March 2024). 
+
+Background image source: https://www.nomadicmatt.com/travel-blogs/things-to-see-and-do-in-bogota/  
