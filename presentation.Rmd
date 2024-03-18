@@ -93,7 +93,7 @@ background-position: center
 
 .pull-left[Once celebrated for the world’s longest cycle route and the innovative Transmilenio system, Bogotá now faces several key challenges, including:
 
-```{r echo=FALSE, out.width= "65%", fig.show='hold', fig.align= 'left'}
+```{r echo=FALSE, out.width= "60%", fig.show='hold', fig.align= 'left'}
 
 knitr::include_graphics('bogota.png')
 ```
