@@ -333,19 +333,35 @@ knitr::include_graphics('organisations.png')
 | Software developer      | To support the integration of simulation tools with GIS software, database systems, and potentially develop custom solutions for data analysis and visualization. |
 
 ---
-## GANNT chart
+## GANNT chart: Year 1
 
-```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'centre'}
+```{r echo=FALSE, out.width= "90%", fig.show='hold', fig.align= 'centre'}
 
-knitr::include_graphics('Screenshot 2024-03-14 212157.png')
+knitr::include_graphics('year1.png')
 ```
 
 ---
-## Budget
+## GANNT chart: Year 2
 
-```{r echo=FALSE, out.width= "40%", fig.show='hold', fig.align= 'centre'}
+```{r echo=FALSE, out.width= "70%", fig.show='hold', fig.align= 'centre'}
 
-knitr::include_graphics('Screenshot 2024-03-14 212430.png')
+knitr::include_graphics('year2.png')
+```
+
+---
+## Budget (i)
+
+```{r echo=FALSE, out.width= "80%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('part1.png')
+```
+
+---
+## Budget (ii)
+
+```{r echo=FALSE, out.width= "60%", fig.show='hold', fig.align= 'centre'}
+
+knitr::include_graphics('part2.png')
 ```
 
 ---
