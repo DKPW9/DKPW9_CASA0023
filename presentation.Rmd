@@ -118,7 +118,6 @@ knitr::include_graphics("widerColombia.png")
 - Missed opportunities for continuous monitoring using remote sensing data
 - Failed to fully utilise traffic congestion data
 - Limited socio-demographic analysis
-- Overlooked the urban heat island effect
 
 ##### (ii) Bogotá’s rejected Septima Verde
 - Rejected due to skepticism of sustainability claims 
